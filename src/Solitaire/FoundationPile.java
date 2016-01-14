@@ -24,10 +24,6 @@ class FoundationPile extends Pile {
     public FoundationPile( int x, int y, int i ) {
 	super( x, y );
 	suit = i;
-	for (int j = 1; j<13; j++) {
-	    push(new Card(j, intToSuit2(i)));
-	}
-	if (i!=4) {push(new Card(13, intToSuit2(i)));}
     }
     
     public boolean accepts( Card someCard ) {
